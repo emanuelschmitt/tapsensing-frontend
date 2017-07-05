@@ -91,24 +91,6 @@ const SurveyForm = (props) => {
                             options={handOptions}
                         />
                     </fieldset>
-                    <fieldset>
-                        <Input
-                            name="occupation"
-                            label="What is your Occupation?"
-
-                            required
-                        />
-                    </fieldset>
-                    <fieldset>
-                        <RadioGroup
-                            name="radioGrp2"
-                            type="inline"
-                            label="Radio group (inline)"
-                            help="This is a required radio group."
-                            options={radioOptions}
-                            required
-                        />
-                    </fieldset>
                 </Form>
             </Col>
         </Row>
