@@ -1,10 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 
+import './index.css'
 import 'bootstrap/dist/css/bootstrap.css'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const RoutableApp = () => (
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+)
+
+ReactDOM.render(<RoutableApp />, document.getElementById('root'))
 registerServiceWorker()

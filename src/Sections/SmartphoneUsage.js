@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input, Select, CheckboxGroup } from 'formsy-react-components'
+import { Input, Select, CheckboxGroup, RadioGroup } from 'formsy-react-components'
 
 import SurveyPanel from '../Components/SurveyPanel'
 
@@ -58,19 +58,19 @@ const SmartphoneUsage = (props) => {
         />
       </fieldset>
       <fieldset>
-        <Select
+        <RadioGroup
           name='most_used_input_modality'
           label='Which input modality do you use most often?'
-          options={selectOptions(inputModalityOptions)}
+          options={inputModalityOptions}
           value=""
           required
         />
       </fieldset>
       <fieldset>
-        <Select
+        <RadioGroup
           name='device_usage'
           label='How often do you use the device every day?'
-          options={selectOptions(deviceUsageOptions)}
+          options={deviceUsageOptions}
           help='Every interaction counts.'
           required
         />

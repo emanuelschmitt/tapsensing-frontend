@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
-import PreTestSurvey from './Surveys/PreTestSurvey'
+import Header from './Components/Header'
+import Router from './Components/Router'
 import Footer from './Components/Footer'
 
 class App extends Component {
   render () {
     return (
       <div className='App'>
-        <PreTestSurvey />
+        <Header />
+        <Router />
         <Footer />
       </div>
     )

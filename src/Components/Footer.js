@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import { Panel, Grid, Col, Row } from 'react-bootstrap'
 
 const Wrapper = styled.div`
-    background-color: skyblue;
-    padding: 4em;
+    padding: 2em;
     margin: 2em 0 0 0;
 `
 
