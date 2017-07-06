@@ -20,8 +20,9 @@ const PeronalInformation = () => {
           name='age'
           label='Age'
           value=''
+          type="number"
           required
-                />
+        />
       </fieldset>
       <fieldset>
         <RadioGroup
@@ -30,7 +31,7 @@ const PeronalInformation = () => {
           options={genderOptions}
           value=''
           required
-                />
+        />
       </fieldset>
       <fieldset>
         <Input
@@ -38,7 +39,7 @@ const PeronalInformation = () => {
           label='Current occupation'
           value=''
           required
-                />
+        />
       </fieldset>
       <fieldset>
         <RadioGroup
@@ -46,7 +47,7 @@ const PeronalInformation = () => {
           label='Are you left or right-handed?'
           value=''
           options={handOptions}
-                />
+        />
       </fieldset>
     </SurveyPanel>
   )

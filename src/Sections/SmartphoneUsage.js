@@ -35,16 +35,18 @@ const SmartphoneUsage = (props) => {
           name='smartphone_use'
           label='Are you a smartphone user?'
           options={selectOptions(YesNoOptions)}
+          value=""
           required
-                />
+        />
       </fieldset>
       <fieldset>
         <Input
           name='smartphone_model'
           label='What smartphone model do you use?'
           help='Example: Apple iPhone 4s'
+          value=""
           required
-                />
+        />
       </fieldset>
       <fieldset>
         <CheckboxGroup
@@ -52,15 +54,17 @@ const SmartphoneUsage = (props) => {
           label='Which input modalities do you use while interacting with the device?'
           options={inputModalityOptions}
           value={[]}
-                />
+          required
+        />
       </fieldset>
       <fieldset>
         <Select
           name='most_used_input_modality'
           label='Which input modality do you use most often?'
           options={selectOptions(inputModalityOptions)}
+          value=""
           required
-                />
+        />
       </fieldset>
       <fieldset>
         <Select
@@ -68,7 +72,8 @@ const SmartphoneUsage = (props) => {
           label='How often do you use the device every day?'
           options={selectOptions(deviceUsageOptions)}
           help='Every interaction counts.'
-                />
+          required
+        />
       </fieldset>
     </SurveyPanel>
   )
