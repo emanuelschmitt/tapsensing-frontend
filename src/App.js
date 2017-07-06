@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import PreTestSurvey from './Surveys/PreTestSurvey'
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <PreTestSurvey/>
+      <div className='App'>
+        <PreTestSurvey />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
