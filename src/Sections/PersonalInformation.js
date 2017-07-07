@@ -20,7 +20,7 @@ const PeronalInformation = () => {
           name='age'
           label='Age'
           value=''
-          type="number"
+          type='number'
           required
         />
       </fieldset>

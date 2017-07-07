@@ -35,7 +35,7 @@ const SmartphoneUsage = (props) => {
           name='smartphone_use'
           label='Are you a smartphone user?'
           options={selectOptions(YesNoOptions)}
-          value=""
+          value=''
           required
         />
       </fieldset>
@@ -44,7 +44,7 @@ const SmartphoneUsage = (props) => {
           name='smartphone_model'
           label='What smartphone model do you use?'
           help='Example: Apple iPhone 4s'
-          value=""
+          value=''
           required
         />
       </fieldset>
@@ -62,7 +62,7 @@ const SmartphoneUsage = (props) => {
           name='most_used_input_modality'
           label='Which input modality do you use most often?'
           options={inputModalityOptions}
-          value=""
+          value=''
           required
         />
       </fieldset>

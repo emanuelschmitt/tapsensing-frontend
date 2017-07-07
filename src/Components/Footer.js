@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Panel, Grid, Col, Row } from 'react-bootstrap'
+import { Grid, Col, Row } from 'react-bootstrap'
 
 const Wrapper = styled.div`
     padding: 2em;
@@ -9,12 +9,11 @@ const Wrapper = styled.div`
 
 const Footer = (props) => (
   <Wrapper>
-      <Grid>
-        <Col md={12}>
-            <Row>
-            </Row>
-        </Col>
-      </Grid>
+    <Grid>
+      <Col md={12}>
+        <Row />
+      </Col>
+    </Grid>
   </Wrapper>
 )
 

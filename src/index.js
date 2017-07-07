@@ -7,9 +7,9 @@ import registerServiceWorker from './registerServiceWorker'
 import 'bootstrap/dist/css/bootstrap.css'
 
 const RoutableApp = () => (
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 )
 
 ReactDOM.render(<RoutableApp />, document.getElementById('root'))
