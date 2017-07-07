@@ -1,4 +1,7 @@
-const BASE_ENDPOINT_URL = 'http://localhost:8000/api/v1/'
+const BASE_ENDPOINT_URL = process.env.NODE_ENV !== 'production'
+  ? 'http://localhost:8000/api/v1/'
+  : 'http://130.149.222.214/api/v1/'
+
 const preTestSurveyEndpoint = BASE_ENDPOINT_URL + 'survey/pretest/'
 
 const defaultHeaders = {
