@@ -52,7 +52,9 @@ class PreTestSurvey extends React.Component {
       : 'Ooops! Something went wrong!'
 
     return (
-      <Alert bsStyle={alertStyle}>{alertText}</Alert>
+      <Alert bsStyle={alertStyle}>
+        <strong>{alertText}</strong>
+      </Alert>
     )
   }
 
