@@ -5,7 +5,7 @@ import { Row, Col, Button, Grid, Alert } from 'react-bootstrap'
 import PersonalInformation from '../Sections/PersonalInformation'
 import SmartphoneUsage from '../Sections/SmartphoneUsage'
 
-import postPreTestSurveyData from '../networking'
+import { postPreTestSurveyData } from '../networking'
 
 const layoutOption = 'vertical'
 
