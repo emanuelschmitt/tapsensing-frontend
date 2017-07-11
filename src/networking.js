@@ -1,4 +1,4 @@
-const BASE_ENDPOINT_URL = process.env.NODE_ENV === 'production'
+const BASE_ENDPOINT_URL = process.env.NODE_ENV !== 'production'
   ? 'http://localhost:8000/api/v1/'
   : 'http://130.149.222.214/api/v1/'
 
