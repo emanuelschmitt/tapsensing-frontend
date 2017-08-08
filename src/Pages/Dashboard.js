@@ -80,6 +80,9 @@ class Dashboard extends React.Component {
           headerText = 'Users Participated Today'
           chartType = 'Pie'
           break
+
+        default:
+          break
       }
 
       obj.headerText = headerText
