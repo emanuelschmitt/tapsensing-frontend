@@ -5,11 +5,11 @@ import { Row, Col, Button, Grid, Alert } from 'react-bootstrap'
 import PersonalInformation from '../Sections/PersonalInformation'
 import SmartphoneUsage from '../Sections/SmartphoneUsage'
 
-import { postPreTestSurveyData } from '../networking'
+import { postSurveyData } from '../networking'
 
 const layoutOption = 'vertical'
 
-class PreTestSurvey extends React.Component {
+class Survey extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -23,8 +23,9 @@ class PreTestSurvey extends React.Component {
     data['input_modalities'] = data['input_modalities'].reduce(
         (a, b) => a + ', ' + b
     )
+    data['smartphone_use'] = true
 
-    postPreTestSurveyData(data)
+    postSurveyData(data)
         .then((response) => this.setState({
           submitSuccess: true,
           showAlert: true
@@ -73,7 +74,7 @@ class PreTestSurvey extends React.Component {
       <Grid>
         <Col md={8} mdOffset={2} xs={10} xsOffset={1}>
           <Row>
-            <h2>Pre-Test Survey</h2>
+            <h2>Survey</h2>
             <hr />
             <Form onSubmit={this.onDataSubmit.bind(this)} layout={layoutOption} >
               <PersonalInformation />
@@ -88,4 +89,4 @@ class PreTestSurvey extends React.Component {
   }
 }
 
-export default PreTestSurvey
+export default Survey

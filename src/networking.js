@@ -2,8 +2,7 @@ const BASE_ENDPOINT_URL = process.env.NODE_ENV !== 'production'
   ? 'http://localhost:8000/api/v1/'
   : 'https://api.tapsensing.de/api/v1/'
 
-const preTestSurveyEndpoint = BASE_ENDPOINT_URL + 'survey/pretest/'
-const finalSurveyEndpoint = BASE_ENDPOINT_URL + 'survey/final/'
+const surveyEndpoint = BASE_ENDPOINT_URL + 'survey/'
 const statisticsEndpoint = BASE_ENDPOINT_URL + 'statistics/'
 
 const defaultHeaders = {
@@ -11,17 +10,8 @@ const defaultHeaders = {
   'Content-Type': 'application/json'
 }
 
-const postPreTestSurveyData = (payload) => {
-  return fetch(preTestSurveyEndpoint, {
-    'method': 'POST',
-    'redirect': 'follow',
-    'headers': defaultHeaders,
-    'body': JSON.stringify(payload)
-  })
-}
-
-const postFinalSurveyData = (payload) => {
-  return fetch(finalSurveyEndpoint, {
+const postSurveyData = (payload) => {
+  return fetch(surveyEndpoint, {
     'method': 'POST',
     'redirect': 'follow',
     'headers': defaultHeaders,
@@ -37,4 +27,4 @@ const getStatistics = () => {
   })
 }
 
-export {postPreTestSurveyData, postFinalSurveyData, getStatistics}
+export {postSurveyData, getStatistics}

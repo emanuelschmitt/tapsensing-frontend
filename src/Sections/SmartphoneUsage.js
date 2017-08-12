@@ -31,15 +31,6 @@ const SmartphoneUsage = (props) => {
   return (
     <SurveyPanel header={'Smartphone Usage'}>
       <fieldset>
-        <Select
-          name='smartphone_use'
-          label='Are you a smartphone user?'
-          options={selectOptions(YesNoOptions)}
-          value=''
-          required
-        />
-      </fieldset>
-      <fieldset>
         <Input
           name='smartphone_model'
           label='What smartphone model do you use?'
